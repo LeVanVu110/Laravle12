@@ -16,9 +16,9 @@ php artisan migrate:fresh --seed
 php artisan key:generate
 
 ```
-## 2. Chạy 3 Cổng
-# phpmyadmin: http://localhost:8080/
-# frontend: http://localhost:5173/
-# backend: http://localhost:8000/
+# 2. Chạy 3 Cổng
+## phpmyadmin: http://localhost:8080/
+## frontend: http://localhost:5173/
+## backend: http://localhost:8000/
 
 
