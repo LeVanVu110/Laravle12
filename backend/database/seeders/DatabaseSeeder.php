@@ -12,12 +12,34 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      */
     public function run(): void
-    {
-        // User::factory(10)->create();
+{
+    $this->call([
+        RolesTableSeeder::class,
+        PermissionsTableSeeder::class,
+        UsersTableSeeder::class,
+        UserProfilesTableSeeder::class,
+        TeachersTableSeeder::class,
+        StudentsTableSeeder::class,
+        UsersRolesTableSeeder::class,
+        RolesPermissionsTableSeeder::class,
+        UserPermissionsTableSeeder::class,
+        ScreensTableSeeder::class,
+        PermissionsScreensTableSeeder::class,
+        CategoryUserTypesTableSeeder::class,
+        CategoryFacultiesTableSeeder::class,
+        CategoryMajorsTableSeeder::class,
+        CategoryPositionsTableSeeder::class,
+        CoursesTableSeeder::class,
+        CourseStudentsTableSeeder::class,
+        ExamSessionsTableSeeder::class,
+        ExamStudentsTableSeeder::class,
+        ExamAttendanceTableSeeder::class,
+        ExamSubmissionsTableSeeder::class,
+        ExamReportsTableSeeder::class,
+        ExamImportLogsTableSeeder::class,
+        ExamImportDataTableSeeder::class,
+        NetworkDriveConfigsTableSeeder::class,
+    ]);
+}
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-    }
 }
